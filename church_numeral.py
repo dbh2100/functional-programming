@@ -1,3 +1,11 @@
+"""This module demonstrates how to implement the Church numeral in Python.
+
+A Church numeral is how lambda calculus implements a number.  It represents
+a natural number using functions. The Church numeral for a number n is a
+function that takes two arguments: a function f and a value x, and applies
+f to x n times.
+"""
+
 from functools import reduce, partial
 from collections.abc import Callable
 
