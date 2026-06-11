@@ -34,6 +34,7 @@ updateCalcDistance currDistance adjDistances (node, calcDistance) =
                 if null calcDistance then (node, totalDistance) else
                     (node, min <$> calcDistance <*> totalDistance)
 
+-- So Nothing values are always placed in the back
 sortCompare :: CalcDistance -> CalcDistance -> Ordering
 sortCompare (_, dist1) (_, dist2)
     | null dist1 = GT
