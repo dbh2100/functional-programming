@@ -27,8 +27,7 @@ updateCalcDistance :: Maybe Distance -> AdjDistances -> CalcDistance -> CalcDist
 updateCalcDistance currDistance adjDistances (node, calcDistance) =
     let adjForNode = filter (\x -> fst x == node) adjDistances
     in
-        if null adjForNode
-            then (node, calcDistance)
+        if null adjForNode then (node, calcDistance)
         else
             let totalDistance = (+ snd (head adjForNode)) <$> currDistance
             in
