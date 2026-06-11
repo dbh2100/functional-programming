@@ -1,0 +1,8 @@
+A B 3
+A C 5
+B D 8
+C D 2
+E F 20
+H D 23
+A H 53
+H I 2
